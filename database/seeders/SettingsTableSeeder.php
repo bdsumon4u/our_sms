@@ -1,4 +1,5 @@
 <?php
+
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
@@ -17,13 +18,13 @@ class SettingsTableSeeder extends Seeder
 
         $data = [
             ['type' => 'current_session', 'description' => '2018-2019'],
-            ['type' => 'system_title', 'description' => 'CJIA'],
-            ['type' => 'system_name', 'description' => 'CJ INSPIRED ACADEMY'],
+            ['type' => 'system_title', 'description' => 'HA'],
+            ['type' => 'system_name', 'description' => 'Hotash Academy'],
             ['type' => 'term_ends', 'description' => '7/10/2018'],
             ['type' => 'term_begins', 'description' => '7/10/2018'],
             ['type' => 'phone', 'description' => '0123456789'],
-            ['type' => 'address', 'description' => '18B North Central Park, Behind Central Square Tourist Center'],
-            ['type' => 'system_email', 'description' => 'cjacademy@cj.com'],
+            ['type' => 'address', 'description' => 'Motihar, Rajshahi, Bangladesh'],
+            ['type' => 'system_email', 'description' => 'hotash@academy.com'],
             ['type' => 'alt_email', 'description' => ''],
             ['type' => 'email_host', 'description' => ''],
             ['type' => 'email_pass', 'description' => ''],
@@ -38,6 +39,5 @@ class SettingsTableSeeder extends Seeder
         ];
 
         DB::table('settings')->insert($data);
-
     }
 }

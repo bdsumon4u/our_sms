@@ -66,14 +66,14 @@
 
                 {{--Administrative--}}
                 @if(Qs::userIsAdministrative())
-                    <li class="nav-item nav-item-submenu {{ in_array(Route::currentRouteName(), ['payments.index', 'payments.create', 'payments.invoice', 'payments.receipts', 'payments.edit', 'payments.manage', 'payments.show',]) ? 'nav-item-expanded nav-item-open' : '' }} ">
+                    {{-- <li class="nav-item nav-item-submenu {{ in_array(Route::currentRouteName(), ['payments.index', 'payments.create', 'payments.invoice', 'payments.receipts', 'payments.edit', 'payments.manage', 'payments.show',]) ? 'nav-item-expanded nav-item-open' : '' }} ">
                         <a href="#" class="nav-link"><i class="icon-office"></i> <span> Administrative</span></a>
 
-                        <ul class="nav nav-group-sub" data-submenu-title="Administrative">
+                        <ul class="nav nav-group-sub" data-submenu-title="Administrative"> --}}
 
                             {{--Payments--}}
                             @if(Qs::userIsTeamAccount())
-                            <li class="nav-item nav-item-submenu {{ in_array(Route::currentRouteName(), ['payments.index', 'payments.create', 'payments.edit', 'payments.manage', 'payments.show', 'payments.invoice']) ? 'nav-item-expanded' : '' }}">
+                            {{-- <li class="nav-item nav-item-submenu {{ in_array(Route::currentRouteName(), ['payments.index', 'payments.create', 'payments.edit', 'payments.manage', 'payments.show', 'payments.invoice']) ? 'nav-item-expanded' : '' }}">
 
                                 <a href="#" class="nav-link {{ in_array(Route::currentRouteName(), ['payments.index', 'payments.edit', 'payments.create', 'payments.manage', 'payments.show', 'payments.invoice']) ? 'active' : '' }}">Payments</a>
 
@@ -84,10 +84,10 @@
 
                                 </ul>
 
-                            </li>
+                            </li> --}}
                             @endif
-                        </ul>
-                    </li>
+                        {{-- </ul>
+                    </li> --}}
                 @endif
 
                 {{--Manage Students--}}
@@ -145,9 +145,9 @@
                     </li>
 
                     {{--Manage Dorms--}}
-                    <li class="nav-item">
+                    {{-- <li class="nav-item">
                         <a href="{{ route('dorms.index') }}" class="nav-link {{ in_array(Route::currentRouteName(), ['dorms.index','dorms.edit']) ? 'active' : '' }}"><i class="icon-home9"></i> <span> Dormitories</span></a>
-                    </li>
+                    </li> --}}
 
                     {{--Manage Sections--}}
                     <li class="nav-item">
@@ -186,9 +186,9 @@
                             </li>
 
                             {{--Marks Batch Fix--}}
-                            <li class="nav-item">
+                            {{-- <li class="nav-item">
                                 <a href="{{ route('marks.batch_fix') }}" class="nav-link {{ in_array(Route::currentRouteName(), ['marks.batch_fix']) ? 'active' : '' }}">Batch Fix</a>
-                            </li>
+                            </li> --}}
                         @endif
 
                         @if(Qs::userIsTeamSAT())
@@ -199,9 +199,9 @@
                             </li>
 
                             {{--Marksheet--}}
-                            <li class="nav-item">
+                            {{-- <li class="nav-item">
                                 <a href="{{ route('marks.bulk') }}" class="nav-link {{ in_array(Route::currentRouteName(), ['marks.bulk', 'marks.show']) ? 'active' : '' }}">Marksheet</a>
-                            </li>
+                            </li> --}}
 
                             @endif
 
